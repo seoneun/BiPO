@@ -6,7 +6,6 @@ Pytorch implementation of paper [BiPO: Bidirectional Partial Occlusion Network f
 - [1. Installation](#1-installation)
 - [2. Train ParCo](#2-train-parco)
 - [3. Evaluation](#3-evaluation)
-- [4. Pre-trained Models](#4-pre-trained-models)
 - [Acknowledgement](#acknowledgement)
 
 ## 1. Installation
