@@ -184,4 +184,4 @@ We thank for:
 [ParCo](https://github.com/qrzou/ParCo),
 [BAMM](https://github.com/exitudio/BAMM)
 etc.
-- Public Datasets: [HumanML3D](https://github.com/EricGuo5513/HumanML3D).
+- Public Datase: [HumanML3D](https://github.com/EricGuo5513/HumanML3D).
