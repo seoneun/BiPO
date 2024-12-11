@@ -106,7 +106,7 @@ The experiment directory structure of our project is:
 
 ### 3.1. VQ-VAE
 ```bash
-CUDA_VISIBLE_DEVICES=0 python train_ParCo_vq.py \
+CUDA_VISIBLE_DEVICES=0 python train_BiPO_vq.py \
 --out-dir output \
 --exp-name BiPO \
 --batch-size 256 \
@@ -128,7 +128,7 @@ CUDA_VISIBLE_DEVICES=0 python train_ParCo_vq.py \
 Remember to set `--vqvae-train-dir` to the corresponding directory of the VQ-VAE you trained.
 
 ```bash
-CUDA_VISIBLE_DEVICES=0 python train_ParCo_trans.py \
+CUDA_VISIBLE_DEVICES=0 python train_BiPO_trans.py \
 --vqvae-train-dir output/00000-t2m-BiPO/VQVAE-BiPO-t2m-default/ \
 --select-vqvae-ckpt fid \
 --exp-name ParCo \
