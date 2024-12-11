@@ -57,11 +57,6 @@ bash dataset/prepare/download_glove.sh
 bash dataset/prepare/download_extractor.sh
 ```
 
-```
-bash dataset/prepare/use_proxy/download_glove.sh
-bash dataset/prepare/use_proxy/download_extractor.sh
-```
-
 ### 2.3. Datasets
 
 [HumanML3D](https://github.com/EricGuo5513/HumanML3D) is used by our project. 
