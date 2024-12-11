@@ -64,7 +64,7 @@ bash dataset/prepare/use_proxy/download_extractor.sh
 
 ### 2.3. Datasets
 
-3D human motion-language datasets, [HumanML3D](https://github.com/EricGuo5513/HumanML3D) is used by our project. 
+[HumanML3D](https://github.com/EricGuo5513/HumanML3D) is used by our project. 
 You can find preparation and acquisition for the dataset [[here]](https://github.com/EricGuo5513/HumanML3D).
 
 The file directory should look like:
