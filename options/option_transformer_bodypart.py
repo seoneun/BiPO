@@ -4,12 +4,12 @@ trans_bodypart_cfg = {
     'default': dict(
         # Common transformer config
         parts_code_nb={  # size of part codebooks
-            'Root': 512*2,
-            'R_Leg': 512*2,
-            'L_Leg': 512*2,
-            'Backbone': 512*2,
-            'R_Arm': 512*2,
-            'L_Arm': 512*2,
+            'Root': 512,
+            'R_Leg': 512,
+            'L_Leg': 512,
+            'Backbone': 512,
+            'R_Arm': 512,
+            'L_Arm': 512,
         },
         parts_embed_dim={  # dimension (size) of transformer attention block
             'Root': 256,
@@ -36,12 +36,12 @@ trans_bodypart_cfg = {
     'small': dict(
         # Common transformer config
         parts_code_nb={  # size of part codebooks
-            'Root': 512*2,
-            'R_Leg': 512*2,
-            'L_Leg': 512*2,
-            'Backbone': 512*2,
-            'R_Arm': 512*2,
-            'L_Arm': 512*2,
+            'Root': 512,
+            'R_Leg': 512,
+            'L_Leg': 512,
+            'Backbone': 512,
+            'R_Arm': 512,
+            'L_Arm': 512,
         },
         parts_embed_dim={  # dimension (size) of transformer attention block
             'Root': 128,
@@ -68,12 +68,12 @@ trans_bodypart_cfg = {
     'tiny': dict(
         # Common transformer config
         parts_code_nb={  # size of part codebooks
-            'Root': 512*2,
-            'R_Leg': 512*2,
-            'L_Leg': 512*2,
-            'Backbone': 512*2,
-            'R_Arm': 512*2,
-            'L_Arm': 512*2,
+            'Root': 512,
+            'R_Leg': 512,
+            'L_Leg': 512,
+            'Backbone': 512,
+            'R_Arm': 512,
+            'L_Arm': 512,
         },
         parts_embed_dim={  # dimension (size) of transformer attention block
             'Root': 64,
@@ -106,7 +106,7 @@ def get_args_parser(args=None):
     
     ## dataloader
     
-    parser.add_argument('--dataname', type=str, default='kit', help='dataset directory')
+    parser.add_argument('--dataname', type=str, default='t2m', help='dataset directory')
     parser.add_argument('--batch-size', default=128, type=int, help='batch size')
     parser.add_argument('--fps', default=[20], nargs="+", type=int, help='frames per second')
     parser.add_argument('--seq-len', type=int, default=64, help='training motion length')
