@@ -1,6 +1,5 @@
 import argparse
 
-'''
 vqvae_bodypart_cfg = {
     'default': dict(
         parts_code_nb={  # number of codes
@@ -39,46 +38,6 @@ vqvae_bodypart_cfg = {
     ),
 
 }
-'''
-
-vqvae_bodypart_cfg = {
-    'default': dict(
-        parts_code_nb={  # number of codes
-            'Root': 1024,
-            'R_Leg': 1024,
-            'L_Leg': 1024,
-            'Backbone': 1024,
-            'R_Arm': 1024,
-            'L_Arm': 1024,
-        },
-        parts_code_dim={  # Remember code_dim should be same to output_dim
-            'Root': 64,
-            'R_Leg': 128,
-            'L_Leg': 128,
-            'Backbone': 128,
-            'R_Arm': 128,
-            'L_Arm': 128,
-        },
-        parts_output_dim={  # dimension of encoder's output
-            'Root': 64,
-            'R_Leg': 128,
-            'L_Leg': 128,
-            'Backbone': 128,
-            'R_Arm': 128,
-            'L_Arm': 128,
-        },
-        parts_hidden_dim={  # hidden dimension of conv1d in encoder/decoder
-            'Root': 64,
-            'R_Leg': 128,
-            'L_Leg': 128,
-            'Backbone': 128,
-            'R_Arm': 128,
-            'L_Arm': 128,
-        }
-
-    ),
-
-}
 
 def get_args_parser(args=None):
     parser = argparse.ArgumentParser(description='Optimal Transport AutoEncoder training for AIST',
@@ -86,7 +45,7 @@ def get_args_parser(args=None):
                                      formatter_class=argparse.ArgumentDefaultsHelpFormatter)
 
     ## dataloader  
-    parser.add_argument('--dataname', type=str, default='kit', help='dataset directory')
+    parser.add_argument('--dataname', type=str, default='t2m', help='dataset directory')
     parser.add_argument('--batch-size', default=128, type=int, help='batch size')
     parser.add_argument('--window-size', type=int, default=64, help='training motion length')
 
