@@ -2,14 +2,11 @@ rm -rf checkpoints
 mkdir checkpoints
 cd checkpoints
 echo -e "Downloading extractors"
-gdown --fuzzy https://drive.google.com/file/d/1o7RTDQcToJjTm9_mNWTyzvZvjTWpZfug/view
-gdown --fuzzy https://drive.google.com/file/d/1KNU8CsMAnxFrwopKBBkC8jEULGLPBHQp/view
+gdown --fuzzy https://drive.google.com/file/d/19C_eiEr0kMGlYVJy_yFL6_Dhk3RvmwhM/view?usp=sharing
 
-
-unzip t2m.zip
-unzip kit.zip
+unzip humanml3d_evaluator.zip
 
 echo -e "Cleaning\n"
-rm t2m.zip
-rm kit.zip
+rm humanml3d_evaluator.zip
+
 echo -e "Downloading done!"
