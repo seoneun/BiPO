@@ -133,7 +133,7 @@ CUDA_VISIBLE_DEVICES=0 python train_BiPO_trans.py \
 --select-vqvae-ckpt fid \
 --exp-name ParCo \
 --pkeep 0.4 \
---batch-size 128 \
+--batch-size 64 \
 --trans-cfg default \
 --fuse-ver V1_3 \
 --alpha 1.0 \
